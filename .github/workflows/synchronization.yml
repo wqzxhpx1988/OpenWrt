@@ -14,12 +14,12 @@ env:
 
 jobs:
   del_runs:
-    runs-on: Ubuntu-20.04
+    runs-on: Ubuntu-22.04
     name: 同步上游仓库
     
     steps:
     - name: 准备结束
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       
     - name: 部署环境
       env:
